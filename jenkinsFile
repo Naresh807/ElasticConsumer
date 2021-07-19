@@ -15,6 +15,12 @@ pipeline
                         bat("mvn package")
                         }
             }
+            stage('Test') {
+                    steps{
+                        input("Do you want to continue ?")
+                        bat("mvn test")
+                        }
+            }
    
      }
 }
