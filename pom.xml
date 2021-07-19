@@ -5,9 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   
 <properties>
-    <java.version>1.11</java.version>
+    <maven.compiler.release>7</maven.compiler.release>
 </properties>
-	
   
     <dependencies>
     <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
@@ -37,4 +36,12 @@
 		    <version>2.8.7</version>
 		</dependency>	
   </dependencies>
+	<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.0</version>
+    <configuration>
+        <release>7</release>
+    </configuration>
+</plugin>
 </project>
